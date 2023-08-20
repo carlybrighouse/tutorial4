@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.example.CalcTest" time="0.01" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.example.CalcTest" time="0.022" tests="2" errors="0" skipped="0" failures="1">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="NZ"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.14.101-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\Carly\AppData\Local\Temp\surefire8190711888157442779\surefirebooter11949350803608133521.jar C:\Users\Carly\AppData\Local\Temp\surefire8190711888157442779 2023-08-20T21-27-01_329-jvmRun1 surefire3432410443106164690tmp surefire_015374118962654692142tmp"/>
+    <property name="sun.java.command" value="C:\Users\Carly\AppData\Local\Temp\surefire18181102093079215781\surefirebooter7902192375476802033.jar C:\Users\Carly\AppData\Local\Temp\surefire18181102093079215781 2023-08-20T21-28-38_419-jvmRun1 surefire12688092283739196246tmp surefire_012027956577437464033tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Carly\tutorial4\target\test-classes;C:\Users\Carly\tutorial4\target\classes;C:\Users\Carly\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.4.0\junit-jupiter-engine-5.4.0.jar;C:\Users\Carly\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\Carly\.m2\repository\org\junit\platform\junit-platform-engine\1.4.0\junit-platform-engine-1.4.0.jar;C:\Users\Carly\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\Carly\.m2\repository\org\junit\platform\junit-platform-commons\1.4.0\junit-platform-commons-1.4.0.jar;C:\Users\Carly\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.4.0\junit-jupiter-api-5.4.0.jar;C:\Users\Carly\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.0\junit-jupiter-5.10.0.jar;C:\Users\Carly\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\Carly\AppData\Local\Temp\surefire8190711888157442779\surefirebooter11949350803608133521.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Carly\AppData\Local\Temp\surefire18181102093079215781\surefirebooter7902192375476802033.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.14.1+1"/>
@@ -60,5 +60,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testAddition" classname="org.example.CalcTest" time="0.006"/>
+  <testcase name="testAddition" classname="org.example.CalcTest" time="0.007"/>
+  <testcase name="testSubtraction" classname="org.example.CalcTest" time="0.011">
+    <failure message="expected: &lt;2&gt; but was: &lt;8&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <2> but was: <8>
+	at org.example.CalcTest.testSubtraction(CalcTest.java:14)
+]]></failure>
+  </testcase>
 </testsuite>
